@@ -1,5 +1,14 @@
 # colorfifty
 
+## 📋 Requirements:
+- Spatie role permission package  `^6.4`
+- PHPUnit test package `^11.x`
+- Tailwind CSS >= 4.x
+- Laravel Modules - https://laravelmodules.com/docs/12/getting-started/introduction
+- Laravel Events (A WordPress like action/filter hooks) - https://github.com/tormjens/eventy
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### 🛠️ Built With
 
 * [![PHP][PHP.com]][PHP-url]
