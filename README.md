@@ -6,7 +6,6 @@
 * [![Laravel][Laravel.com]][Laravel-url]
 * [![Tailwind CSS][TailwindCSS.com]][TailwindCSS-url]
 * [![JavaScript][JavaScript.com]][JavaScript-url]
-* [![Alpine JS][AlpineJS.com]][AlpineJS-url]
 * [![React][React.js]][React-url]
 * [![MySQL][MySQL.com]][MySQL-url]
 
