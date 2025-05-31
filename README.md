@@ -22,8 +22,10 @@
 
 ```
 cd colorfifty
+```
 composer run dev
-
+```
+composer update
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
