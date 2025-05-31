@@ -22,6 +22,7 @@
 
 ```
 cd colorfifty
+php artisan migrate
 ```
 ```
 composer run dev
