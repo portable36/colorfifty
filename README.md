@@ -23,6 +23,7 @@
 ```
 cd colorfifty
 ```
+```
 composer run dev
 ```
 composer update
