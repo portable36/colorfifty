@@ -23,6 +23,8 @@
 ```
 cd colorfifty
 php artisan migrate
+npm install && npm run dev
+php artisan ui react
 ```
 ```
 composer run dev
