@@ -20,6 +20,13 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+```
+cd colorfifty
+composer run dev
+
+```
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/laradashboard/laradashboard.svg?style=for-the-badge
 [contributors-url]: https://github.com/laradashboard/laradashboard/graphs/contributors
