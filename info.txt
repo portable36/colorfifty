@@ -1,0 +1,163 @@
+1️⃣ Business Foundation (Define First – No Code Yet)
+1.1 Vendor Onboarding
+
+Flow
+
+Vendor signs up (OAuth / Email)
+
+Email + phone verification
+
+Submit:
+
+Business name
+
+NID / Trade license
+
+Bank/MFS (bKash/Nagad)
+
+Admin review → Approve / Reject
+
+Vendor dashboard activated
+
+Vendor States
+
+PENDING
+
+APPROVED
+
+SUSPENDED
+
+TERMINATED
+
+1.2 Commission Structure
+
+| Type           | Example                     |
+| -------------- | --------------------------- |
+| Category-based | Electronics 5%, Fashion 10% |
+| Vendor-based   | Premium vendor 3%           |
+| Campaign-based | Flash sale 2%               |
+
+Stored as in ts
+CommissionRule {
+  scope: CATEGORY | VENDOR | GLOBAL
+  percentage
+  validFrom
+  validTo
+}
+
+1.3 Payout Cycles
+
+Weekly / Bi-weekly
+
+Minimum payout threshold (৳1000)
+
+Auto-generate payout invoices
+
+Manual admin approval
+
+Payout Flow in sql
+
+Order Delivered → Settlement Hold (7 days)
+→ Commission Deducted → Vendor Wallet
+→ Payout Request → Bank/MFS Transfer
+
+1.4 Dispute Resolution
+
+Buyer ↔ Vendor chat
+
+Escalation to Admin
+
+Evidence upload
+
+Final decision logged (audit)
+
+1.5 Catalog Rules
+
+Admin approves categories
+
+Restricted products list
+
+Image moderation
+
+Auto-disable fake/duplicate products
+
+5️⃣ Authentication & Security
+Auth
+
+JWT (Access + Refresh)
+
+JWT Rotation
+
+OAuth (Google/Facebook) for vendors
+
+2FA (Admin & Vendor)
+
+Security Layers
+
+WAF (Cloudflare)
+
+Rate limiting (Redis)
+
+CSRF (Next.js middleware)
+
+Encrypted secrets (Vault / AWS Secrets)
+
+Password hashing (Argon2)
+
+8️⃣ Performance Optimization (Your Targets)
+Target
+
+TTFB < 200ms
+
+LCP < 1s
+
+99.9% uptime
+
+Techniques
+
+SSR + Edge caching
+
+Redis query caching
+
+HTTP Cache headers
+
+CDN image optimization
+
+DB indexing
+
+Elasticsearch for search
+
+Origin caching (Varnish)
+
+9️⃣ Localization (Bangladesh)
+Currency
+
+Default: BDT
+
+Server-side price formatting
+
+Language
+
+Bangla / English
+
+Next.js i18n routing
+
+Shipping Rules
+
+Inside Dhaka
+
+Outside Dhaka
+
+Courier-based rules
+
+Monitoring & Analytics
+
+Prometheus + Grafana
+
+Sentry (error tracking)
+
+Elastic APM
+
+Business metrics dashboard
+
+
